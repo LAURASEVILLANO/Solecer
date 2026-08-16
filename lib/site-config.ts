@@ -13,9 +13,9 @@ export const siteConfig = {
   // Contacto — se usa en el footer y la sección de contacto
   contact: {
     email: "contacto@solecerinversiones.com",
-    phone: "+57 300 000 0000",
-    phoneHref: "+573000000000", // mismo número, sin espacios, para el link "tel:"
-    location: "Medellín, Colombia — cobertura nacional",
+    phone: "+57 3108093919",
+    phoneHref: "+573108093919", // mismo número, sin espacios, para el link "tel:"
+    location: "Bogota, Colombia — cobertura nacional",
   },
 
   // Redes sociales — pon aquí tus links reales (o deja "#" si aún no tienes)
