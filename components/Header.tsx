@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
@@ -20,7 +20,10 @@ export default function Header() {
     <header className="fixed top-0 inset-x-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-18 flex items-center justify-between py-4">
         <a href="#inicio" className="flex items-center gap-2 group">
-         <div className="relative w-10 h-10">
+       <div className="relative w-10 h-10">
+<Image
+src="/images/logo.jpeg"
+alt="Logo Solecer"
 <Image
   src="/images/logo.jpeg"
 alt="Logo Solecer"
