@@ -80,6 +80,7 @@ export default function Header() {
             </a>
           ))}
         </div>
-      )}
-    </header>
-  );
+)}
+</header>
+);
+}
