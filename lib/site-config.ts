@@ -12,7 +12,7 @@ export const siteConfig = {
 
   // Contacto — se usa en el footer y la sección de contacto
   contact: {
-    email: "contacto@solecerinversiones.com",
+    email: "solecer27@gmail.com",
     phone: "+57 3108093919",
     phoneHref: "+573108093919", // mismo número, sin espacios, para el link "tel:"
     location: "Bogota, Colombia — cobertura nacional",
