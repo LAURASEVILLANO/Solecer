@@ -1,4 +1,4 @@
-import Header from "@/logo";
+import Header from "@/components/header";
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
 import SolarArrayShowcase from "@/components/SolarArrayShowcase";
