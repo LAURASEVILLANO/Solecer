@@ -1,11 +1,8 @@
 "use client";
 
-
 import { useState } from "react";
 import { Menu, X, Sun } from "lucide-react";
-import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
-
 
 const LINKS = [
   { href: "#beneficios", label: "Beneficios" },
@@ -16,10 +13,8 @@ const LINKS = [
   { href: "#preguntas", label: "Preguntas" },
 ];
 
-
 export default function Header() {
   const [open, setOpen] = useState(false);
-
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
