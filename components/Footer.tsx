@@ -1,4 +1,4 @@
-import { Sun, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 const COLUMNS = [
@@ -21,8 +21,14 @@ const COLUMNS = [
   {
     title: "Contacto",
     links: [
-      { label: siteConfig.contact.email, href: `mailto:${siteConfig.contact.email}` },
-      { label: siteConfig.contact.phone, href: `tel:${siteConfig.contact.phoneHref}` },
+      {
+        label: siteConfig.contact.email,
+        href: `mailto:${siteConfig.contact.email}`,
+      },
+      {
+        label: siteConfig.contact.phone,
+        href: `tel:${siteConfig.contact.phoneHref}`,
+      },
       { label: siteConfig.cta.primary, href: "#contacto" },
     ],
   },
@@ -35,19 +41,26 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10">
           <div>
             <a href="#inicio" className="flex items-center gap-2">
-              <span className="grid place-items-center w-9 h-9 rounded-full bg-sun-gradient">
-                <Sun className="w-5 h-5 text-navy" strokeWidth={2.5} />
-              </span>
+              <img
+                src="/images/logo.png"
+                alt="Logo Solecer"
+                className="h-10 w-auto object-contain"
+              />
+
               <span className="font-display font-semibold text-white text-lg">
                 {siteConfig.companyName}{" "}
-                <span className="text-solar">{siteConfig.companyNameHighlight}</span>
+                <span className="text-solar">
+                  {siteConfig.companyNameHighlight}
+                </span>
               </span>
             </a>
+
             <p className="mt-4 text-sm text-white/50 max-w-xs leading-relaxed">
               Transformamos tu factura de energía en ahorro, estabilidad y
               autonomía, con sistemas solares diseñados a la medida en toda
               Colombia.
             </p>
+
             <div className="mt-6 flex items-center gap-3">
               {[
                 { Icon: Instagram, href: siteConfig.social.instagram },
@@ -89,7 +102,8 @@ export default function Footer() {
 
         <div className="mt-14 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} {siteConfig.copyrightHolder}. Todos los derechos reservados.
+            © {new Date().getFullYear()} {siteConfig.copyrightHolder}. Todos los
+            derechos reservados.
           </p>
           <div className="flex items-center gap-6 text-xs text-white/40">
             <a href="#" className="hover:text-white/70 transition-colors">
