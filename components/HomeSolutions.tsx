@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const POINTS = [
   "Sistemas dimensionados para viviendas de estrato 5 y 6.",
@@ -20,59 +21,7 @@ export default function HomeSolutions() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
         >
-          <svg
-            viewBox="0 0 480 320"
-            className="w-full h-auto"
-            role="img"
-            aria-label="Ilustración de una vivienda con paneles solares en el techo"
-          >
-            <rect x="40" y="180" width="400" height="110" rx="4" fill="#F4F5F7" />
-            <polygon points="40,180 240,60 440,180" fill="#0B1F3A" />
-            <rect x="90" y="210" width="60" height="80" fill="#0B1F3A" opacity="0.08" />
-            <rect x="330" y="210" width="60" height="80" fill="#0B1F3A" opacity="0.08" />
-
-            {/* solar panel array on the roof */}
-            {[0, 1, 2, 3].map((col) =>
-              [0, 1].map((row) => (
-                <rect
-                  key={`${col}-${row}`}
-                  x={130 + col * 46}
-                  y={112 + row * 26}
-                  width={40}
-                  height={22}
-                  rx={2}
-                  fill="#F5B400"
-                  opacity={0.9 - row * 0.12}
-                  transform={`skewY(${-8 + row * 2})`}
-                />
-              ))
-            )}
-            <line x1="40" y1="180" x2="240" y2="60" stroke="#F5B400" strokeWidth="2" />
-            <line x1="440" y1="180" x2="240" y2="60" stroke="#F5B400" strokeWidth="2" />
-
-            {/* sun */}
-            <circle cx="410" cy="55" r="22" fill="#F5B400" opacity="0.9" />
-            {[...Array(8)].map((_, i) => {
-              const angle = (i * Math.PI) / 4;
-              const x1 = 410 + Math.cos(angle) * 32;
-              const y1 = 55 + Math.sin(angle) * 32;
-              const x2 = 410 + Math.cos(angle) * 42;
-              const y2 = 55 + Math.sin(angle) * 42;
-              return (
-                <line
-                  key={i}
-                  x1={x1}
-                  y1={y1}
-                  x2={x2}
-                  y2={y2}
-                  stroke="#F5B400"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  opacity="0.6"
-                />
-              );
-            })}
-          </svg>
+          /images/logo.png
         </motion.div>
 
         <motion.div
