@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { Menu, X, Sun } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 
 
@@ -24,9 +25,10 @@ export default function Header() {
     <header className="fixed top-0 inset-x-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-18 flex items-center justify-between py-4">
         <a href="#inicio" className="flex items-center gap-2 group">
-          <span className="grid place-items-center w-9 h-9 rounded-full bg-sun-gradient">
-            <Sun className="w-5 h-5 text-navy" strokeWidth={2.5} />
-          </span>
+          <div className="relative w-10 h-10">
+<div className="relative w-10 h-10">
+/images/logo.jpeg
+</div>
           <span className="font-display font-semibold text-white text-lg tracking-tight">
             {siteConfig.companyName}{" "}
             <span className="text-solar">{siteConfig.companyNameHighlight}</span>
