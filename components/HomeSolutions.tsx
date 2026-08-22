@@ -21,10 +21,7 @@ export default function HomeSolutions() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
         >
-         <Image
-src="/images/logo.png"
-alt="Logo Solecer"
-        </motion.div>
+            </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 20 }}
