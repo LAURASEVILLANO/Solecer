@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import Image from "next/image";
 
 const POINTS = [
   "Sistemas dimensionados para viviendas de estrato 5 y 6.",
@@ -21,7 +20,12 @@ export default function HomeSolutions() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
         >
-            </motion.div>
+          <img
+            src="/images/logo.png"
+            alt="Logo Solecer"
+            className="w-full h-auto max-h-[420px] object-contain"
+          />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 20 }}
