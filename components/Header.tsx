@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { siteConfig } from "@/lib/site-config";
 
 const LINKS = [
   { href: "#beneficios", label: "Beneficios" },
@@ -20,14 +21,15 @@ export default function Header() {
     <header className="fixed top-0 inset-x-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-18 flex items-center justify-between py-4">
         <a href="#inicio" className="flex items-center gap-2 group">
-<Image
-logo.png
+          /images/logo.png
+
           <span className="font-display font-semibold text-white text-lg tracking-tight">
             {siteConfig.companyName}{" "}
-            <span className="text-solar">{siteConfig.companyNameHighlight}</span>
+            <span className="text-solar">
+              {siteConfig.companyNameHighlight}
+            </span>
           </span>
         </a>
-
 
         <nav className="hidden lg:flex items-center gap-8">
           {LINKS.map((link) => (
@@ -41,7 +43,6 @@ logo.png
           ))}
         </nav>
 
-
         <div className="flex items-center gap-2">
           <a
             href="#contacto"
@@ -50,17 +51,20 @@ logo.png
             {siteConfig.cta.primary}
           </a>
 
-
           <button
+            type="button"
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             onClick={() => setOpen(!open)}
             className="lg:hidden text-white p-2"
           >
-            {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {open ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>
-
 
       {open && (
         <div className="lg:hidden border-t border-white/10 bg-navy px-6 py-6 flex flex-col gap-5">
@@ -75,7 +79,7 @@ logo.png
             </a>
           ))}
         </div>
-)}
-</header>
-);
+      )}
+    </header>
+  );
 }
