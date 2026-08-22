@@ -21,9 +21,9 @@ export default function HomeSolutions() {
           transition={{ duration: 0.7 }}
         >
           <img
-           src="/images/hogar-solar.png"
-alt="Casa con paneles solares"
-className
+            src="/images/hogar-solar.png"
+            alt="Casa moderna con paneles solares"
+            className="w-full h-[420px] object-cover rounded-2xl shadow-xl"
           />
         </motion.div>
 
