@@ -21,9 +21,9 @@ export default function HomeSolutions() {
           transition={{ duration: 0.7 }}
         >
           <img
-            src="/images/logo.png"
-            alt="Logo Solecer"
-            className="w-full h-auto max-h-[420px] object-contain"
+           src="/images/hogar-solar.png"
+alt="Casa con paneles solares"
+className
           />
         </motion.div>
 
